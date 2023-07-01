@@ -1,29 +1,26 @@
-# easybbs-web
+# bbs论坛
 
-Use vue3+element-plus+axios+vite+vuex+vue-router...compose
-A small bbs chat
-## Recommended IDE Setup
+使用
+```
+vue3+element-plus+axios+vuex+vue-router组成的🎢
+```
+## 简介
+一个简易的论坛项目，可以随意发帖，获得成就与成长，正在紧急施工中...🏗️
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 安装
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 运行
 
-```sh
+```
 npm run dev
 ```
 
-### Compile and Minify for Production
+### 打包
 
-```sh
+```
 npm run build
 ```
