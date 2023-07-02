@@ -18,16 +18,18 @@
             trigger="hover"
             v-if="boardItem.children.length > 0"
           >
+            <!-- 板块信息 -->
             <template #reference>
               <a href="javascript:void(0)">{{ boardItem.boardName }}</a>
             </template>
+            <!-- 展示内容（二级板块） -->
             <div class="sub-board-list">
               <a
                 href="javascript:void(0)"
                 class="sub-board"
-                v-for="sonItem in boardItem.children"
+                v-for="subBoard in boardItem.children"
               >
-                {{ sonItem.boardName }}
+                {{ subBoard.boardName }}
               </a>
             </div>
           </el-popover>
@@ -240,18 +242,21 @@ watch(
 .header {
   width: 100%;
   height: 60px;
+  top:0;
   box-shadow: 0px 2px 6px #ddd;
   background-color: #fff;
   position: fixed;
-  top: 0px;
   z-index: 1000;
   .header-content {
-    margin: 0 33px;
+    width: 80%;
     height: 60px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    background: white;
     .header-title {
       .logo {
+        display: block;
         text-decoration: none;
         img {
           width: 50px;

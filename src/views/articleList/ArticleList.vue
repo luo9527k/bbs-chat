@@ -1,4 +1,4 @@
-s<template>
+<template>
   <div class="body-content">
     <div
       :style="{ width: proxy.baseConfig.layoutWidth + 'px' }"
@@ -68,7 +68,7 @@ const changeOrderType = (type) => {
 };
 
 const api = {
-  article: "forum/loadArticle",
+  article: "/forum/loadArticle",
 };
 const articleList = ref({
   pageNo: 1,
@@ -80,7 +80,6 @@ const getArticleList = async () => {
     boardId: 0,
     orderType: orderType.value,
   };
-  console.log(params);
   let result = await proxy.Request({
     url: api.article,
     params: params,
